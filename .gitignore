@@ -1,0 +1,19 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Dataset
+data/train/
+data/test/
+
+# Model files
+*.h5
+*.pt
+*.pth
+
+# System files
+.DS_Store

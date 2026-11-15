@@ -1,0 +1,9 @@
+# Preserve document/media bytes; never apply text newline conversion to PDFs.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# Experiment records include SHA-256 hashes of serialized manifests.
+# Keep their exact bytes across Windows and Linux checkouts.
+artifacts/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol linguist-generated=true

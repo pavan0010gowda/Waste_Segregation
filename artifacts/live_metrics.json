@@ -1,0 +1,1599 @@
+{
+  "selection": [
+    {
+      "name": "balanced_logistic_C=0.01",
+      "validation_macro_f1": 0.9582491555371662
+    },
+    {
+      "name": "balanced_logistic_C=0.1",
+      "validation_macro_f1": 0.9582273263708507
+    },
+    {
+      "name": "balanced_logistic_C=1",
+      "validation_macro_f1": 0.9554747679850844
+    },
+    {
+      "name": "balanced_rbf_ovr_C=1",
+      "validation_macro_f1": 0.964093844762435
+    },
+    {
+      "name": "balanced_rbf_ovr_C=10",
+      "validation_macro_f1": 0.9699378716024234
+    },
+    {
+      "name": "balanced_rbf_ovr_C=100",
+      "validation_macro_f1": 0.9699378716024234
+    },
+    {
+      "name": "cosine_neighbors_k=3",
+      "validation_macro_f1": 0.9484058129910795
+    },
+    {
+      "name": "cosine_neighbors_k=7",
+      "validation_macro_f1": 0.9573495933240298
+    },
+    {
+      "name": "cosine_neighbors_k=15",
+      "validation_macro_f1": 0.9543411453985922
+    }
+  ],
+  "selected": "balanced_rbf_ovr_C=10",
+  "train_images": 3890,
+  "temperature": 0.3094074354811512,
+  "support_thresholds": [
+    0.6038558632135391,
+    0.4963304787874222,
+    0.4914832353591919,
+    0.6975589692592621
+  ],
+  "selection_decision": {
+    "new_validation_macro_f1": 0.9699378716024234,
+    "manifest_sha256": "921cfe7775b6ec9a046297a1b3ba397aa8297ef550c7675f1dbac03c2d9f8c2b",
+    "selection_rule": "Compare raw macro F1 on exactly the same expanded validation; no test or holdout scores used.",
+    "baseline_validation_macro_f1": 0.8532615279504094,
+    "baseline_run": "artifacts\\runs\\selective_organic",
+    "baseline_head_sha256": "cd3ad1c24bd6a286b0776927000367beedd509d13c61d600c0a576584dc36e56",
+    "recommendation": "new"
+  },
+  "limitations": [
+    "Historical test was previously inspected; this is retrospective, not a pristine final benchmark.",
+    "Validation reused for selection, calibration and 5th-percentile class support thresholds.",
+    "Neighbor support and confidence are heuristic unknown-input safeguards; no real-world OOD accuracy claim.",
+    "Selective metrics here use embedding support/confidence/margin only; they exclude foreground, temporal stability and image-detail gates.",
+    "Class crops and foreground boxes need independent live-camera evaluation."
+  ],
+  "frozen_baseline": {
+    "validation": {
+      "n": 963,
+      "accuracy": 0.9138110072689511,
+      "accuracy_wilson_95": [
+        0.8944003545699883,
+        0.9299332280975345
+      ],
+      "macro_f1": 0.8532615279504094,
+      "balanced_accuracy": 0.8308943772065556,
+      "log_loss": 1.3603436879281148,
+      "expected_calibration_error": 0.08148836408112982,
+      "threshold": 0.8,
+      "coverage": 0.9865005192107996,
+      "accepted_accuracy": 0.9189473684210526,
+      "confusion_matrix": [
+        [
+          134,
+          0,
+          1,
+          21
+        ],
+        [
+          18,
+          51,
+          32,
+          5
+        ],
+        [
+          3,
+          2,
+          357,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          338
+        ]
+      ],
+      "per_class": {
+        "dry_decomposable": {
+          "precision": 0.864516129032258,
+          "recall": 0.8589743589743589,
+          "f1-score": 0.8617363344051447,
+          "support": 156.0
+        },
+        "dry_non_degradable": {
+          "precision": 0.9622641509433962,
+          "recall": 0.4811320754716981,
+          "f1-score": 0.6415094339622641,
+          "support": 106.0
+        },
+        "dry_recyclable": {
+          "precision": 0.9153846153846154,
+          "recall": 0.9834710743801653,
+          "f1-score": 0.9482071713147411,
+          "support": 363.0
+        },
+        "wet": {
+          "precision": 0.9260273972602739,
+          "recall": 1.0,
+          "f1-score": 0.9615931721194879,
+          "support": 338.0
+        },
+        "accuracy": 0.9138110072689511,
+        "macro avg": {
+          "precision": 0.9170480731551359,
+          "recall": 0.8308943772065556,
+          "f1-score": 0.8532615279504094,
+          "support": 963.0
+        },
+        "weighted avg": {
+          "precision": 0.9160398668614957,
+          "recall": 0.9138110072689511,
+          "f1-score": 0.905138695255286,
+          "support": 963.0
+        }
+      },
+      "represented_classes": [
+        "dry_decomposable",
+        "dry_non_degradable",
+        "dry_recyclable",
+        "wet"
+      ],
+      "macro_f1_present_classes": 0.8532615279504094,
+      "by_source_category": {
+        "Cigarette": {
+          "n": 10,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Clear plastic bottle": {
+          "n": 12,
+          "accuracy": 1.0,
+          "selective_coverage": 0.5
+        },
+        "Corrugated carton": {
+          "n": 4,
+          "accuracy": 0.75,
+          "selective_coverage": 0.5
+        },
+        "Crisp packet": {
+          "n": 4,
+          "accuracy": 0.25,
+          "selective_coverage": 0.75
+        },
+        "Drink can": {
+          "n": 12,
+          "accuracy": 1.0,
+          "selective_coverage": 0.8333333333333334
+        },
+        "Egg carton": {
+          "n": 1,
+          "accuracy": 1.0,
+          "selective_coverage": 0.0
+        },
+        "Foam cup": {
+          "n": 1,
+          "accuracy": 0.0,
+          "selective_coverage": 1.0
+        },
+        "Foam food container": {
+          "n": 2,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Food Can": {
+          "n": 2,
+          "accuracy": 1.0,
+          "selective_coverage": 1.0
+        },
+        "Glass bottle": {
+          "n": 8,
+          "accuracy": 1.0,
+          "selective_coverage": 0.25
+        },
+        "Metal bottle cap": {
+          "n": 5,
+          "accuracy": 1.0,
+          "selective_coverage": 0.0
+        },
+        "Normal paper": {
+          "n": 4,
+          "accuracy": 1.0,
+          "selective_coverage": 0.25
+        },
+        "Other carton": {
+          "n": 6,
+          "accuracy": 0.5,
+          "selective_coverage": 0.3333333333333333
+        },
+        "Other plastic bottle": {
+          "n": 4,
+          "accuracy": 0.75,
+          "selective_coverage": 0.25
+        },
+        "Other plastic wrapper": {
+          "n": 12,
+          "accuracy": 0.08333333333333333,
+          "selective_coverage": 0.16666666666666666
+        },
+        "Paper bag": {
+          "n": 2,
+          "accuracy": 0.5,
+          "selective_coverage": 0.0
+        },
+        "Plastic film": {
+          "n": 12,
+          "accuracy": 0.16666666666666666,
+          "selective_coverage": 0.16666666666666666
+        },
+        "Plastic straw": {
+          "n": 7,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Plastic utensils": {
+          "n": 3,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Styrofoam piece": {
+          "n": 8,
+          "accuracy": 0.0,
+          "selective_coverage": 0.125
+        },
+        "Vegetation": {
+          "n": 27,
+          "accuracy": 0.2222222222222222,
+          "selective_coverage": 0.18518518518518517
+        }
+      },
+      "selective_coverage": 0.8431983385254413,
+      "selective_accepted_accuracy": 0.9827586206896551,
+      "selective_per_class": {
+        "dry_decomposable": {
+          "n": 156,
+          "accepted": 125,
+          "correct_accepted": 120
+        },
+        "dry_non_degradable": {
+          "n": 106,
+          "accepted": 53,
+          "correct_accepted": 44
+        },
+        "dry_recyclable": {
+          "n": 363,
+          "accepted": 313,
+          "correct_accepted": 313
+        },
+        "wet": {
+          "n": 338,
+          "accepted": 321,
+          "correct_accepted": 321
+        }
+      }
+    },
+    "test": {
+      "n": 922,
+      "accuracy": 0.9696312364425163,
+      "accuracy_wilson_95": [
+        0.9564585224427219,
+        0.9789066631354589
+      ],
+      "macro_f1": 0.9473015591657041,
+      "balanced_accuracy": 0.9657761320923572,
+      "log_loss": 0.24563235598716915,
+      "expected_calibration_error": 0.025608078422375863,
+      "threshold": 0.8,
+      "coverage": 0.9902386117136659,
+      "accepted_accuracy": 0.9737130339539978,
+      "confusion_matrix": [
+        [
+          147,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          552,
+          0
+        ],
+        [
+          13,
+          0,
+          8,
+          179
+        ]
+      ],
+      "per_class": {
+        "dry_decomposable": {
+          "precision": 0.91875,
+          "recall": 0.9735099337748344,
+          "f1-score": 0.9453376205787781,
+          "support": 151.0
+        },
+        "dry_non_degradable": {
+          "precision": 0.8421052631578947,
+          "recall": 1.0,
+          "f1-score": 0.9142857142857143,
+          "support": 16.0
+        },
+        "dry_recyclable": {
+          "precision": 0.9804618117229129,
+          "recall": 0.9945945945945946,
+          "f1-score": 0.9874776386404294,
+          "support": 555.0
+        },
+        "wet": {
+          "precision": 0.9944444444444445,
+          "recall": 0.895,
+          "f1-score": 0.9421052631578948,
+          "support": 200.0
+        },
+        "accuracy": 0.9696312364425163,
+        "macro avg": {
+          "precision": 0.9339403798313131,
+          "recall": 0.9657761320923572,
+          "f1-score": 0.9473015591657041,
+          "support": 922.0
+        },
+        "weighted avg": {
+          "precision": 0.9709871243011191,
+          "recall": 0.9696312364425163,
+          "f1-score": 0.9694638765867507,
+          "support": 922.0
+        }
+      },
+      "represented_classes": [
+        "dry_decomposable",
+        "dry_non_degradable",
+        "dry_recyclable",
+        "wet"
+      ],
+      "macro_f1_present_classes": 0.9473015591657041,
+      "by_source_category": {},
+      "selective_coverage": 0.7147505422993492,
+      "selective_accepted_accuracy": 0.9969650986342944,
+      "selective_per_class": {
+        "dry_decomposable": {
+          "n": 151,
+          "accepted": 124,
+          "correct_accepted": 122
+        },
+        "dry_non_degradable": {
+          "n": 16,
+          "accepted": 16,
+          "correct_accepted": 16
+        },
+        "dry_recyclable": {
+          "n": 555,
+          "accepted": 519,
+          "correct_accepted": 519
+        },
+        "wet": {
+          "n": 200,
+          "accepted": 0,
+          "correct_accepted": 0
+        }
+      }
+    },
+    "external_test": {
+      "n": 61,
+      "accuracy": 1.0,
+      "accuracy_wilson_95": [
+        0.9407540837980555,
+        1.0
+      ],
+      "macro_f1": 0.25,
+      "balanced_accuracy": 1.0,
+      "log_loss": 0.00010154111563030108,
+      "expected_calibration_error": 0.00010142052747652563,
+      "threshold": 0.8,
+      "coverage": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          61
+        ]
+      ],
+      "per_class": {
+        "dry_decomposable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "dry_non_degradable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "dry_recyclable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "wet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 61.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1-score": 0.25,
+          "support": 61.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 61.0
+        }
+      },
+      "represented_classes": [
+        "wet"
+      ],
+      "macro_f1_present_classes": 1.0,
+      "by_source_category": {},
+      "selective_coverage": 0.819672131147541,
+      "selective_accepted_accuracy": 1.0,
+      "selective_per_class": {
+        "dry_decomposable": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        },
+        "dry_non_degradable": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        },
+        "dry_recyclable": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        },
+        "wet": {
+          "n": 61,
+          "accepted": 50,
+          "correct_accepted": 50
+        }
+      }
+    },
+    "organic_holdout": {
+      "n": 90,
+      "accuracy": 1.0,
+      "accuracy_wilson_95": [
+        0.9590629315783191,
+        0.9999999999999999
+      ],
+      "macro_f1": 0.25,
+      "balanced_accuracy": 1.0,
+      "log_loss": 0.00015115463044187134,
+      "expected_calibration_error": 0.00015051107428487587,
+      "threshold": 0.8,
+      "coverage": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          90
+        ]
+      ],
+      "per_class": {
+        "dry_decomposable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "dry_non_degradable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "dry_recyclable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "wet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 90.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1-score": 0.25,
+          "support": 90.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 90.0
+        }
+      },
+      "represented_classes": [
+        "wet"
+      ],
+      "macro_f1_present_classes": 1.0,
+      "by_source_category": {},
+      "selective_coverage": 0.7222222222222222,
+      "selective_accepted_accuracy": 1.0,
+      "selective_per_class": {
+        "dry_decomposable": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        },
+        "dry_non_degradable": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        },
+        "dry_recyclable": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        },
+        "wet": {
+          "n": 90,
+          "accepted": 65,
+          "correct_accepted": 65
+        }
+      }
+    },
+    "everyday_holdout": {
+      "n": 146,
+      "accuracy": 0.4452054794520548,
+      "accuracy_wilson_95": [
+        0.3670211374202465,
+        0.5261994368395053
+      ],
+      "macro_f1": 0.2589399396122085,
+      "balanced_accuracy": 0.3752563297761038,
+      "log_loss": 9.077230180763214,
+      "expected_calibration_error": 0.5100542863911751,
+      "threshold": 0.8,
+      "coverage": 0.9178082191780822,
+      "accepted_accuracy": 0.4552238805970149,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          25
+        ],
+        [
+          20,
+          6,
+          30,
+          3
+        ],
+        [
+          2,
+          1,
+          57,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "dry_decomposable": {
+          "precision": 0.08333333333333333,
+          "recall": 0.07407407407407407,
+          "f1-score": 0.0784313725490196,
+          "support": 27.0
+        },
+        "dry_non_degradable": {
+          "precision": 0.8571428571428571,
+          "recall": 0.1016949152542373,
+          "f1-score": 0.18181818181818182,
+          "support": 59.0
+        },
+        "dry_recyclable": {
+          "precision": 0.6551724137931034,
+          "recall": 0.95,
+          "f1-score": 0.7755102040816326,
+          "support": 60.0
+        },
+        "wet": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.4452054794520548,
+        "macro avg": {
+          "precision": 0.3989121510673235,
+          "recall": 0.28144224733207784,
+          "f1-score": 0.2589399396122085,
+          "support": 146.0
+        },
+        "weighted avg": {
+          "precision": 0.6310395438288683,
+          "recall": 0.4452054794520548,
+          "f1-score": 0.4066817262396864,
+          "support": 146.0
+        }
+      },
+      "represented_classes": [
+        "dry_decomposable",
+        "dry_non_degradable",
+        "dry_recyclable"
+      ],
+      "macro_f1_present_classes": 0.345253252816278,
+      "by_source_category": {
+        "Cigarette": {
+          "n": 10,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Clear plastic bottle": {
+          "n": 12,
+          "accuracy": 1.0,
+          "selective_coverage": 0.5833333333333334
+        },
+        "Corrugated carton": {
+          "n": 4,
+          "accuracy": 1.0,
+          "selective_coverage": 0.75
+        },
+        "Crisp packet": {
+          "n": 4,
+          "accuracy": 0.25,
+          "selective_coverage": 0.25
+        },
+        "Drink can": {
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "selective_coverage": 0.6666666666666666
+        },
+        "Egg carton": {
+          "n": 1,
+          "accuracy": 1.0,
+          "selective_coverage": 0.0
+        },
+        "Foam cup": {
+          "n": 1,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Foam food container": {
+          "n": 2,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Food Can": {
+          "n": 2,
+          "accuracy": 1.0,
+          "selective_coverage": 1.0
+        },
+        "Glass bottle": {
+          "n": 8,
+          "accuracy": 1.0,
+          "selective_coverage": 0.5
+        },
+        "Metal bottle cap": {
+          "n": 5,
+          "accuracy": 0.8,
+          "selective_coverage": 0.0
+        },
+        "Normal paper": {
+          "n": 4,
+          "accuracy": 1.0,
+          "selective_coverage": 0.25
+        },
+        "Other carton": {
+          "n": 6,
+          "accuracy": 0.8333333333333334,
+          "selective_coverage": 0.8333333333333334
+        },
+        "Other plastic bottle": {
+          "n": 4,
+          "accuracy": 1.0,
+          "selective_coverage": 0.5
+        },
+        "Other plastic wrapper": {
+          "n": 12,
+          "accuracy": 0.4166666666666667,
+          "selective_coverage": 0.25
+        },
+        "Paper bag": {
+          "n": 2,
+          "accuracy": 1.0,
+          "selective_coverage": 0.0
+        },
+        "Plastic film": {
+          "n": 12,
+          "accuracy": 0.0,
+          "selective_coverage": 0.16666666666666666
+        },
+        "Plastic straw": {
+          "n": 7,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Plastic utensils": {
+          "n": 3,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Styrofoam piece": {
+          "n": 8,
+          "accuracy": 0.0,
+          "selective_coverage": 0.0
+        },
+        "Vegetation": {
+          "n": 27,
+          "accuracy": 0.07407407407407407,
+          "selective_coverage": 0.1111111111111111
+        }
+      },
+      "selective_coverage": 0.2808219178082192,
+      "selective_accepted_accuracy": 0.7804878048780488,
+      "selective_per_class": {
+        "dry_decomposable": {
+          "n": 27,
+          "accepted": 3,
+          "correct_accepted": 0
+        },
+        "dry_non_degradable": {
+          "n": 59,
+          "accepted": 6,
+          "correct_accepted": 0
+        },
+        "dry_recyclable": {
+          "n": 60,
+          "accepted": 32,
+          "correct_accepted": 32
+        },
+        "wet": {
+          "n": 0,
+          "accepted": 0,
+          "correct_accepted": 0
+        }
+      }
+    }
+  },
+  "validation": {
+    "n": 963,
+    "accuracy": 0.9781931464174455,
+    "accuracy_wilson_95": [
+      0.9668927514003803,
+      0.9856934840284636
+    ],
+    "macro_f1": 0.9699378716024234,
+    "balanced_accuracy": 0.9700913778133728,
+    "log_loss": 0.07286649884647331,
+    "expected_calibration_error": 0.002840974677498952,
+    "threshold": 0.8,
+    "coverage": 0.9626168224299065,
+    "accepted_accuracy": 0.9902912621359223,
+    "confusion_matrix": [
+      [
+        152,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        99,
+        7,
+        0
+      ],
+      [
+        0,
+        8,
+        355,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        336
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.9934640522875817,
+        "recall": 0.9743589743589743,
+        "f1-score": 0.9838187702265372,
+        "support": 156.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.9166666666666666,
+        "recall": 0.9339622641509434,
+        "f1-score": 0.9252336448598131,
+        "support": 106.0
+      },
+      "dry_recyclable": {
+        "precision": 0.9752747252747253,
+        "recall": 0.977961432506887,
+        "f1-score": 0.9766162310866575,
+        "support": 363.0
+      },
+      "wet": {
+        "precision": 0.9940828402366864,
+        "recall": 0.9940828402366864,
+        "f1-score": 0.9940828402366864,
+        "support": 338.0
+      },
+      "accuracy": 0.9781931464174455,
+      "macro avg": {
+        "precision": 0.969872071116415,
+        "recall": 0.9700913778133728,
+        "f1-score": 0.9699378716024234,
+        "support": 963.0
+      },
+      "weighted avg": {
+        "precision": 0.9783715307354669,
+        "recall": 0.9781931464174455,
+        "f1-score": 0.9782577221131222,
+        "support": 963.0
+      }
+    },
+    "represented_classes": [
+      "dry_decomposable",
+      "dry_non_degradable",
+      "dry_recyclable",
+      "wet"
+    ],
+    "macro_f1_present_classes": 0.9699378716024234,
+    "by_source_category": {
+      "Cigarette": {
+        "n": 10,
+        "accuracy": 1.0,
+        "selective_coverage": 0.9
+      },
+      "Clear plastic bottle": {
+        "n": 12,
+        "accuracy": 1.0,
+        "selective_coverage": 0.8333333333333334
+      },
+      "Corrugated carton": {
+        "n": 4,
+        "accuracy": 0.5,
+        "selective_coverage": 0.5
+      },
+      "Crisp packet": {
+        "n": 4,
+        "accuracy": 1.0,
+        "selective_coverage": 0.5
+      },
+      "Drink can": {
+        "n": 12,
+        "accuracy": 0.9166666666666666,
+        "selective_coverage": 0.8333333333333334
+      },
+      "Egg carton": {
+        "n": 1,
+        "accuracy": 1.0,
+        "selective_coverage": 0.0
+      },
+      "Foam cup": {
+        "n": 1,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Foam food container": {
+        "n": 2,
+        "accuracy": 0.0,
+        "selective_coverage": 0.5
+      },
+      "Food Can": {
+        "n": 2,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Glass bottle": {
+        "n": 8,
+        "accuracy": 1.0,
+        "selective_coverage": 0.875
+      },
+      "Metal bottle cap": {
+        "n": 5,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Normal paper": {
+        "n": 4,
+        "accuracy": 0.25,
+        "selective_coverage": 0.25
+      },
+      "Other carton": {
+        "n": 6,
+        "accuracy": 0.6666666666666666,
+        "selective_coverage": 0.6666666666666666
+      },
+      "Other plastic bottle": {
+        "n": 4,
+        "accuracy": 1.0,
+        "selective_coverage": 0.5
+      },
+      "Other plastic wrapper": {
+        "n": 12,
+        "accuracy": 0.8333333333333334,
+        "selective_coverage": 0.5833333333333334
+      },
+      "Paper bag": {
+        "n": 2,
+        "accuracy": 1.0,
+        "selective_coverage": 0.0
+      },
+      "Plastic film": {
+        "n": 12,
+        "accuracy": 1.0,
+        "selective_coverage": 0.8333333333333334
+      },
+      "Plastic straw": {
+        "n": 7,
+        "accuracy": 1.0,
+        "selective_coverage": 0.7142857142857143
+      },
+      "Plastic utensils": {
+        "n": 3,
+        "accuracy": 1.0,
+        "selective_coverage": 0.6666666666666666
+      },
+      "Styrofoam piece": {
+        "n": 8,
+        "accuracy": 0.75,
+        "selective_coverage": 0.625
+      },
+      "Vegetation": {
+        "n": 27,
+        "accuracy": 0.8888888888888888,
+        "selective_coverage": 0.9259259259259259
+      }
+    },
+    "selective_coverage": 0.9169262720664589,
+    "selective_accepted_accuracy": 0.9909399773499433,
+    "selective_per_class": {
+      "dry_decomposable": {
+        "n": 156,
+        "accepted": 145,
+        "correct_accepted": 143
+      },
+      "dry_non_degradable": {
+        "n": 106,
+        "accepted": 87,
+        "correct_accepted": 84
+      },
+      "dry_recyclable": {
+        "n": 363,
+        "accepted": 332,
+        "correct_accepted": 329
+      },
+      "wet": {
+        "n": 338,
+        "accepted": 319,
+        "correct_accepted": 319
+      }
+    }
+  },
+  "test": {
+    "n": 922,
+    "accuracy": 0.9273318872017353,
+    "accuracy_wilson_95": [
+      0.9087434310553487,
+      0.9423740819187928
+    ],
+    "macro_f1": 0.8867331721287579,
+    "balanced_accuracy": 0.9154153242646621,
+    "log_loss": 0.23679574791095945,
+    "expected_calibration_error": 0.035567035421689985,
+    "threshold": 0.8,
+    "coverage": 0.8275488069414316,
+    "accepted_accuracy": 0.9737876802096985,
+    "confusion_matrix": [
+      [
+        145,
+        1,
+        5,
+        0
+      ],
+      [
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        553,
+        0
+      ],
+      [
+        46,
+        1,
+        12,
+        141
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.7591623036649214,
+        "recall": 0.9602649006622517,
+        "f1-score": 0.847953216374269,
+        "support": 151.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1-score": 0.8888888888888888,
+        "support": 16.0
+      },
+      "dry_recyclable": {
+        "precision": 0.9701754385964912,
+        "recall": 0.9963963963963964,
+        "f1-score": 0.9831111111111112,
+        "support": 555.0
+      },
+      "wet": {
+        "precision": 1.0,
+        "recall": 0.705,
+        "f1-score": 0.8269794721407625,
+        "support": 200.0
+      },
+      "accuracy": 0.9273318872017353,
+      "macro avg": {
+        "precision": 0.8823344355653532,
+        "recall": 0.9154153242646621,
+        "f1-score": 0.8867331721287579,
+        "support": 922.0
+      },
+      "weighted avg": {
+        "precision": 0.939133271447349,
+        "recall": 0.9273318872017353,
+        "f1-score": 0.9254725802489762,
+        "support": 922.0
+      }
+    },
+    "represented_classes": [
+      "dry_decomposable",
+      "dry_non_degradable",
+      "dry_recyclable",
+      "wet"
+    ],
+    "macro_f1_present_classes": 0.8867331721287579,
+    "by_source_category": {},
+    "selective_coverage": 0.7190889370932755,
+    "selective_accepted_accuracy": 0.9924585218702866,
+    "selective_per_class": {
+      "dry_decomposable": {
+        "n": 151,
+        "accepted": 122,
+        "correct_accepted": 119
+      },
+      "dry_non_degradable": {
+        "n": 16,
+        "accepted": 16,
+        "correct_accepted": 16
+      },
+      "dry_recyclable": {
+        "n": 555,
+        "accepted": 524,
+        "correct_accepted": 523
+      },
+      "wet": {
+        "n": 200,
+        "accepted": 1,
+        "correct_accepted": 0
+      }
+    }
+  },
+  "external_test": {
+    "n": 61,
+    "accuracy": 1.0,
+    "accuracy_wilson_95": [
+      0.9407540837980555,
+      1.0
+    ],
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "log_loss": 0.012855467601516157,
+    "expected_calibration_error": 0.012455615532246146,
+    "threshold": 0.8,
+    "coverage": 1.0,
+    "accepted_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        61
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "dry_recyclable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "wet": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 61.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1-score": 0.25,
+        "support": 61.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 61.0
+      }
+    },
+    "represented_classes": [
+      "wet"
+    ],
+    "macro_f1_present_classes": 1.0,
+    "by_source_category": {},
+    "selective_coverage": 0.8032786885245902,
+    "selective_accepted_accuracy": 1.0,
+    "selective_per_class": {
+      "dry_decomposable": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      },
+      "dry_non_degradable": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      },
+      "dry_recyclable": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      },
+      "wet": {
+        "n": 61,
+        "accepted": 49,
+        "correct_accepted": 49
+      }
+    }
+  },
+  "organic_holdout": {
+    "n": 90,
+    "accuracy": 1.0,
+    "accuracy_wilson_95": [
+      0.9590629315783191,
+      0.9999999999999999
+    ],
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "log_loss": 0.02174943461612174,
+    "expected_calibration_error": 0.02036138433853084,
+    "threshold": 0.8,
+    "coverage": 0.9777777777777777,
+    "accepted_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        90
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "dry_recyclable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "wet": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1-score": 0.25,
+        "support": 90.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      }
+    },
+    "represented_classes": [
+      "wet"
+    ],
+    "macro_f1_present_classes": 1.0,
+    "by_source_category": {},
+    "selective_coverage": 0.6888888888888889,
+    "selective_accepted_accuracy": 1.0,
+    "selective_per_class": {
+      "dry_decomposable": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      },
+      "dry_non_degradable": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      },
+      "dry_recyclable": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      },
+      "wet": {
+        "n": 90,
+        "accepted": 62,
+        "correct_accepted": 62
+      }
+    }
+  },
+  "everyday_holdout": {
+    "n": 146,
+    "accuracy": 0.8424657534246576,
+    "accuracy_wilson_95": [
+      0.7746970749749333,
+      0.8926743359016192
+    ],
+    "macro_f1": 0.6471644752676977,
+    "balanced_accuracy": 0.8439317848922369,
+    "log_loss": 0.46881234466480026,
+    "expected_calibration_error": 0.09146569425316409,
+    "threshold": 0.8,
+    "coverage": 0.8013698630136986,
+    "accepted_accuracy": 0.905982905982906,
+    "confusion_matrix": [
+      [
+        23,
+        0,
+        0,
+        4
+      ],
+      [
+        1,
+        47,
+        11,
+        0
+      ],
+      [
+        0,
+        7,
+        53,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.9583333333333334,
+        "recall": 0.8518518518518519,
+        "f1-score": 0.9019607843137255,
+        "support": 27.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.8703703703703703,
+        "recall": 0.7966101694915254,
+        "f1-score": 0.831858407079646,
+        "support": 59.0
+      },
+      "dry_recyclable": {
+        "precision": 0.828125,
+        "recall": 0.8833333333333333,
+        "f1-score": 0.8548387096774194,
+        "support": 60.0
+      },
+      "wet": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.8424657534246576,
+      "macro avg": {
+        "precision": 0.6642071759259259,
+        "recall": 0.6329488386691776,
+        "f1-score": 0.6471644752676977,
+        "support": 146.0
+      },
+      "weighted avg": {
+        "precision": 0.8692763825469305,
+        "recall": 0.8424657534246576,
+        "f1-score": 0.8542665053069511,
+        "support": 146.0
+      }
+    },
+    "represented_classes": [
+      "dry_decomposable",
+      "dry_non_degradable",
+      "dry_recyclable"
+    ],
+    "macro_f1_present_classes": 0.862885967023597,
+    "by_source_category": {
+      "Cigarette": {
+        "n": 10,
+        "accuracy": 1.0,
+        "selective_coverage": 0.9
+      },
+      "Clear plastic bottle": {
+        "n": 12,
+        "accuracy": 0.9166666666666666,
+        "selective_coverage": 0.75
+      },
+      "Corrugated carton": {
+        "n": 4,
+        "accuracy": 0.75,
+        "selective_coverage": 0.75
+      },
+      "Crisp packet": {
+        "n": 4,
+        "accuracy": 0.75,
+        "selective_coverage": 0.25
+      },
+      "Drink can": {
+        "n": 12,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Egg carton": {
+        "n": 1,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Foam cup": {
+        "n": 1,
+        "accuracy": 0.0,
+        "selective_coverage": 0.0
+      },
+      "Foam food container": {
+        "n": 2,
+        "accuracy": 0.5,
+        "selective_coverage": 0.5
+      },
+      "Food Can": {
+        "n": 2,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Glass bottle": {
+        "n": 8,
+        "accuracy": 0.75,
+        "selective_coverage": 0.625
+      },
+      "Metal bottle cap": {
+        "n": 5,
+        "accuracy": 1.0,
+        "selective_coverage": 0.8
+      },
+      "Normal paper": {
+        "n": 4,
+        "accuracy": 1.0,
+        "selective_coverage": 0.25
+      },
+      "Other carton": {
+        "n": 6,
+        "accuracy": 0.6666666666666666,
+        "selective_coverage": 0.5
+      },
+      "Other plastic bottle": {
+        "n": 4,
+        "accuracy": 0.75,
+        "selective_coverage": 1.0
+      },
+      "Other plastic wrapper": {
+        "n": 12,
+        "accuracy": 0.75,
+        "selective_coverage": 0.75
+      },
+      "Paper bag": {
+        "n": 2,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Plastic film": {
+        "n": 12,
+        "accuracy": 0.6666666666666666,
+        "selective_coverage": 0.5833333333333334
+      },
+      "Plastic straw": {
+        "n": 7,
+        "accuracy": 1.0,
+        "selective_coverage": 0.7142857142857143
+      },
+      "Plastic utensils": {
+        "n": 3,
+        "accuracy": 1.0,
+        "selective_coverage": 1.0
+      },
+      "Styrofoam piece": {
+        "n": 8,
+        "accuracy": 0.75,
+        "selective_coverage": 0.5
+      },
+      "Vegetation": {
+        "n": 27,
+        "accuracy": 0.8518518518518519,
+        "selective_coverage": 0.8518518518518519
+      }
+    },
+    "selective_coverage": 0.7397260273972602,
+    "selective_accepted_accuracy": 0.9537037037037037,
+    "selective_per_class": {
+      "dry_decomposable": {
+        "n": 27,
+        "accepted": 23,
+        "correct_accepted": 22
+      },
+      "dry_non_degradable": {
+        "n": 59,
+        "accepted": 39,
+        "correct_accepted": 36
+      },
+      "dry_recyclable": {
+        "n": 60,
+        "accepted": 46,
+        "correct_accepted": 45
+      },
+      "wet": {
+        "n": 0,
+        "accepted": 0,
+        "correct_accepted": 0
+      }
+    }
+  },
+  "training_seconds": 139.34577079999872,
+  "backbone": "efficientnet"
+}

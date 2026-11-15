@@ -1,16 +1,7 @@
-# scripts/evaluate.py
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
-valid_dir = "data/test"
-valid_gen = ImageDataGenerator(rescale=1./255)
-valid_data = valid_gen.flow_from_directory(
-    valid_dir,
-    target_size=(128, 128),
-    batch_size=32,
-    class_mode='categorical'
-)
-
-model = load_model("../models/waste_classifier.h5")
-loss, accuracy = model.evaluate(valid_data)
-print(f"Validation Accuracy: {accuracy*100:.2f}%")
+"""Compatibility entry point; see README.md for the unified pipeline."""
+import sys
+import runpy
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+if __name__ == "__main__":
+    runpy.run_module("wastewise.baseline", run_name="__main__")

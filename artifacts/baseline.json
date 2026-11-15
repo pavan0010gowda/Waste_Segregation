@@ -1,0 +1,7 @@
+{
+  "status": "not_comparable",
+  "output_classes": 8,
+  "expected_classes": 4,
+  "model_sha256": "124d6efa7d589f4c1a8cb2db0c03314f1d3b5f3a1daa28581280ad928436dc33",
+  "reason": "Saved legacy model has eight outputs but scripts define four labels. Original class metadata is missing; assigning labels would fabricate a baseline."
+}

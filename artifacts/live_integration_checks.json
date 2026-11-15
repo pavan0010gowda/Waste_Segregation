@@ -1,0 +1,12 @@
+{
+  "run": "selective_organic",
+  "export_parity_samples": 8,
+  "blank_crops_rejected": 3,
+  "empty_frames": 24,
+  "empty_scene_classifier_calls": 0,
+  "passed": true,
+  "model_hash": {
+    "head.npz": "cd3ad1c24bd6a286b0776927000367beedd509d13c61d600c0a576584dc36e56",
+    "features.keras": "e33f7d9aba78c5c700ce338b0550a6306bd7ad231cae55e2c9b10c5f752c8ecf"
+  }
+}

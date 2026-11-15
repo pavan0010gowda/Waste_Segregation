@@ -1,0 +1,20 @@
+{
+  "run": "artifacts/runs/selective_everyday",
+  "validation_macro_f1": 0.9699378716024234,
+  "head": "balanced_rbf_ovr_C=10",
+  "candidates": [
+    {
+      "run": "artifacts/runs/selective_organic",
+      "validation_macro_f1": 0.8532615279504094,
+      "head": "balanced_logistic_C=0.1"
+    },
+    {
+      "run": "artifacts/runs/selective_everyday",
+      "validation_macro_f1": 0.9699378716024234,
+      "head": "balanced_rbf_ovr_C=10"
+    }
+  ],
+  "previous_run": "artifacts/runs/selective_organic",
+  "comparison_manifest_sha256": "921cfe7775b6ec9a046297a1b3ba397aa8297ef550c7675f1dbac03c2d9f8c2b",
+  "selection_rule": "Maximum validation macro F1; test scores not used in backbone/head selection."
+}

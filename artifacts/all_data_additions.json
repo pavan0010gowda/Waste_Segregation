@@ -1,0 +1,41 @@
+{
+  "base_manifest": "artifacts/everyday-manifest.json",
+  "base_sha256": "921cfe7775b6ec9a046297a1b3ba397aa8297ef550c7675f1dbac03c2d9f8c2b",
+  "manifest": "artifacts/all-data-manifest.json",
+  "manifest_sha256": "1a26b309c84ee9de17065632f63b5d4dba1e45e0ee6b6dd58f81a796d8c5f575",
+  "added": [
+    {
+      "path": "data/train/dry_decomposable/dreamy-arrangement-with-decorative-dried-flowers_23-2151363300.avif",
+      "sha256": "08e8c3ba6b89aa79a7ca55e1e7998225ee751ff65537c4768a055a62d75cde2c",
+      "phash": "fb0f8594d8ce8632",
+      "size": [
+        740,
+        740
+      ],
+      "label": "dry_decomposable",
+      "original_split": "train",
+      "split": "train",
+      "group": "08e8c3ba6b89aa79a7ca55e1e7998225ee751ff65537c4768a055a62d75cde2c",
+      "source": "Existing locally supplied labelled dataset",
+      "label_source": "Existing class folder; no model-generated label",
+      "license": "Inherited source rights not established; image is not published"
+    },
+    {
+      "path": "data/train/dry_decomposable/dried-leaves-branch-still-life-photography_191095-86422.avif",
+      "sha256": "f6b7c7940bb2eae75ab0b18e8681fc085c988a0ff90f22ce0344b776beb2e35b",
+      "phash": "e439d3c99992666c",
+      "size": [
+        740,
+        740
+      ],
+      "label": "dry_decomposable",
+      "original_split": "train",
+      "split": "train",
+      "group": "f6b7c7940bb2eae75ab0b18e8681fc085c988a0ff90f22ce0344b776beb2e35b",
+      "source": "Existing locally supplied labelled dataset",
+      "label_source": "Existing class folder; no model-generated label",
+      "license": "Inherited source rights not established; image is not published"
+    }
+  ],
+  "policy": "Only previously omitted labelled local AVIF training images were added; all prior rows and evaluation assignments preserved."
+}

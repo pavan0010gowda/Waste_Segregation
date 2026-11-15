@@ -1,0 +1,1818 @@
+{
+  "source": "https://github.com/fruits-360/fruits-360-100x100",
+  "revision": "bed1c24ee70de1569272de3882fbde88211c08b5",
+  "authors": "Mihai Oltean; Fruits-360 dataset contributors",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://github.com/fruits-360/fruits-360-100x100/blob/bed1c24ee70de1569272de3882fbde88211c08b5/LICENSE",
+  "license_file_sha256": "4365d53bc0c029ce517f7b299b87fdb6271e1eec1fb8407ab539a1a8ccbd12c6",
+  "source_readme_sha256": "a8a45bab4b936710c71c8b6d923241f3411816da27bf45e0a5de3128ed30941e",
+  "original_manifest_sha256": "af727cd943018e3c56cbfe71bbfe54028c8be96f38bb4867acf5815c362bb47c",
+  "new_manifest_sha256": "9b1b8967a0361cae6a6c2578b6e7e474a24d29355781e05ca3b6607034ce7570",
+  "requested": 840,
+  "retained": 498,
+  "download_bytes": 3660839,
+  "added_split_counts": {
+    "train": 306,
+    "organic_holdout": 90,
+    "validation": 102
+  },
+  "mapping": {
+    "selected fresh fruit/vegetable classes": "wet"
+  },
+  "group_policy": "Entire upstream Training class-folder variants stay in one split. Peach/Plum held out; adjacent rotating frames never split across train/validation/holdout.",
+  "sampling": "Up to70 evenly spaced indices in natural filename order per folder; pHash connected-component screening at Hamming distance<=4.",
+  "exclusions": [
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/21_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/131_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/139_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/146_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/153_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/195_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/245_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/260_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/274_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/281_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/309_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/316_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_127_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_163_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_177_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_184_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_191_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_206_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_220_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_227_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_248_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_255_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_263_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_270_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_277_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_291_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_298_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_305_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Apple Braeburn 1/r_312_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/280_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/38_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/89_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/127_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/217_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/224_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/231_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/238_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/245_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/252_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/259_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_3_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_304_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_311_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_137_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_179_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_186_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Banana 1/r_200_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_2_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_5_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_8_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_10_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_13_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_16_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_20_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_22_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_25_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_28_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_30_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_33_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_37_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_40_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_42_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_45_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_48_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_50_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_192_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_194_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_198_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_54_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_57_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_60_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_62_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_65_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_68_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_70_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_74_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_77_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_80_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_82_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_85_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_88_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_92_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_94_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_97_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_102_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_105_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_109_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_112_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_114_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_117_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_120_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_122_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_126_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_129_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_132_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_134_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_137_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_140_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_142_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_146_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_149_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_152_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_154_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_157_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_160_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_164_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_166_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_169_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_172_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_174_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_177_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_181_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Cucumber 1/r0_186_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/0_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/13_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/111_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/118_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/125_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/132_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/146_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/153_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/160_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/167_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/180_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/187_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/201_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/208_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/215_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/222_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/229_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/250_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/257_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/264_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/270_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/277_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/284_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/291_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/298_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/305_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_2_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_16_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_23_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_30_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_139_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_146_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_153_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_160_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_271_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_306_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_313_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_320_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/103_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/194_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_174_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_202_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_209_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_216_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_220_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_227_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_229_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_243_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_250_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_257_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_264_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r2_199_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Orange 1/r_292_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/14_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/21_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/28_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/295_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/302_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/309_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/316_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/110_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/117_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/124_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/131_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/139_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/146_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/153_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/160_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/167_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/174_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/181_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/188_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/195_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/203_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/210_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/217_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/224_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/231_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/238_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/245_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/252_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/260_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/267_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/274_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/281_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/288_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_134_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_149_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_156_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_163_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_170_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_177_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_184_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_284_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_291_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_298_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_305_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_312_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 1/r_320_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/75_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/201_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/r2_40_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/r2_59_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/r2_295_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/r_88_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pepper Red 1/r_156_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/297_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/308_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/325_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/77_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/88_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/99_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/141_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r2_305_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r2_33_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r2_327_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_294_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_305_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_32_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_43_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_327_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_75_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_86_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 1/r_203_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/36_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_7_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_203_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/72_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/133_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/140_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/224_100.jpg",
+      "reason": "cross_split_component",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r2_72_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r2_112_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r2_118_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r2_152_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r2_186_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_27_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_47_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_67_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_74_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_87_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_113_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato Yellow 1/r_120_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/9_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/29_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/48_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/152_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/139_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/235_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/r2_97_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/r_1_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Tomato 2/r_301_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/70_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/80_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/90_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/110_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/130_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/140_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/150_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/160_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/191_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/221_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/231_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_9_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_39_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_310_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_144_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_154_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_164_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_174_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_184_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_190_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_200_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_210_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r2_220_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_4_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_14_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_24_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_34_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_44_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Pear 2/r_315_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/316_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/21_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/28_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/139_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/146_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/160_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/181_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/188_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/195_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/210_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/238_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/245_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/274_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/288_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/302_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/309_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_17_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_24_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_31_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_142_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_149_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_156_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_170_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_184_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_199_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_234_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_263_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_284_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_298_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Peach 1/r_312_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/13_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/19_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/107_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/114_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/120_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/127_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/140_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/146_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/153_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/159_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/165_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/185_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/r_318_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/r_111_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/r_188_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/r_201_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/r_227_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    },
+    {
+      "path": "data/external/fruits360/images/Plum 1/r_298_100.jpg",
+      "reason": "same_split_near_duplicate",
+      "conflicting_label": false
+    }
+  ],
+  "folder_inventory": {
+    "Apple Braeburn 1": {
+      "split": "train",
+      "available": 492,
+      "sampled": 70,
+      "retained": 41
+    },
+    "Banana 1": {
+      "split": "train",
+      "available": 490,
+      "sampled": 70,
+      "retained": 52
+    },
+    "Cucumber 1": {
+      "split": "train",
+      "available": 150,
+      "sampled": 70,
+      "retained": 4
+    },
+    "Orange 1": {
+      "split": "train",
+      "available": 479,
+      "sampled": 70,
+      "retained": 21
+    },
+    "Pear 1": {
+      "split": "train",
+      "available": 492,
+      "sampled": 70,
+      "retained": 22
+    },
+    "Pepper Red 1": {
+      "split": "train",
+      "available": 666,
+      "sampled": 70,
+      "retained": 63
+    },
+    "Tomato 1": {
+      "split": "train",
+      "available": 738,
+      "sampled": 70,
+      "retained": 52
+    },
+    "Tomato Yellow 1": {
+      "split": "train",
+      "available": 459,
+      "sampled": 70,
+      "retained": 51
+    },
+    "Tomato 2": {
+      "split": "validation",
+      "available": 672,
+      "sampled": 70,
+      "retained": 61
+    },
+    "Pear 2": {
+      "split": "validation",
+      "available": 696,
+      "sampled": 70,
+      "retained": 41
+    },
+    "Peach 1": {
+      "split": "organic_holdout",
+      "available": 492,
+      "sampled": 70,
+      "retained": 39
+    },
+    "Plum 1": {
+      "split": "organic_holdout",
+      "available": 447,
+      "sampled": 70,
+      "retained": 51
+    }
+  },
+  "limitations": [
+    "Fresh produce is an organic-material proxy, not a moisture measurement or proof an item is waste.",
+    "White studio backgrounds differ from the sorting camera. New holdout is organic-only and does not measure four-class accuracy.",
+    "Class folders serve as conservative capture groups; metadata does not prove every folder represents a unique physical specimen.",
+    "pHash screening is heuristic and does not prove complete independence.",
+    "Dataset expansion follows diagnosis on historical test data; historical scores remain exploratory."
+  ],
+  "attribution": "Mihai Oltean, Fruits-360 dataset, 2017\u2013. CC BY-SA 4.0. Source files retained; no alterations to downloaded images. Preserve attribution and ShareAlike terms when redistributing adapted dataset material."
+}

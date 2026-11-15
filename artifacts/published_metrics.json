@@ -1,0 +1,270 @@
+{
+  "validation": {
+    "n": 715,
+    "accuracy": 0.9958041958041958,
+    "accuracy_wilson_95": [
+      0.9877370143696971,
+      0.9985720695786997
+    ],
+    "macro_f1": 0.9929144806577044,
+    "balanced_accuracy": 0.9927964465216805,
+    "log_loss": 0.01239722088977456,
+    "expected_calibration_error": 0.0027882650427456046,
+    "threshold": 0.8,
+    "coverage": 0.9916083916083916,
+    "accepted_accuracy": 0.998589562764457,
+    "confusion_matrix": [
+      [
+        129,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        46,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        302,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        235
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 129.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.9787234042553191,
+        "recall": 0.9787234042553191,
+        "f1-score": 0.9787234042553191,
+        "support": 47.0
+      },
+      "dry_recyclable": {
+        "precision": 0.993421052631579,
+        "recall": 0.9966996699669967,
+        "f1-score": 0.9950576606260296,
+        "support": 303.0
+      },
+      "wet": {
+        "precision": 1.0,
+        "recall": 0.9957627118644068,
+        "f1-score": 0.9978768577494692,
+        "support": 236.0
+      },
+      "accuracy": 0.9958041958041958,
+      "macro avg": {
+        "precision": 0.9930361142217246,
+        "recall": 0.9927964465216805,
+        "f1-score": 0.9929144806577044,
+        "support": 715.0
+      },
+      "weighted avg": {
+        "precision": 0.9958133971291866,
+        "recall": 0.9958041958041958,
+        "f1-score": 0.9958061672707157,
+        "support": 715.0
+      }
+    }
+  },
+  "test": {
+    "n": 922,
+    "accuracy": 0.8394793926247288,
+    "accuracy_wilson_95": [
+      0.8143828454466843,
+      0.8617587321190677
+    ],
+    "macro_f1": 0.7601558294703457,
+    "balanced_accuracy": 0.8193448332438399,
+    "log_loss": 0.6631506610105781,
+    "expected_calibration_error": 0.1182058905796162,
+    "threshold": 0.8,
+    "coverage": 0.9229934924078091,
+    "accepted_accuracy": 0.8730904817861339,
+    "confusion_matrix": [
+      [
+        142,
+        1,
+        6,
+        2
+      ],
+      [
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        5,
+        3,
+        545,
+        2
+      ],
+      [
+        118,
+        1,
+        10,
+        71
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.5358490566037736,
+        "recall": 0.9403973509933775,
+        "f1-score": 0.6826923076923077,
+        "support": 151.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.7619047619047619,
+        "recall": 1.0,
+        "f1-score": 0.8648648648648649,
+        "support": 16.0
+      },
+      "dry_recyclable": {
+        "precision": 0.9714795008912656,
+        "recall": 0.9819819819819819,
+        "f1-score": 0.9767025089605734,
+        "support": 555.0
+      },
+      "wet": {
+        "precision": 0.9466666666666667,
+        "recall": 0.355,
+        "f1-score": 0.5163636363636364,
+        "support": 200.0
+      },
+      "accuracy": 0.8394793926247288,
+      "macro avg": {
+        "precision": 0.8039749965166169,
+        "recall": 0.8193448332438399,
+        "f1-score": 0.7601558294703457,
+        "support": 922.0
+      },
+      "weighted avg": {
+        "precision": 0.8911151193770409,
+        "recall": 0.8394793926247288,
+        "f1-score": 0.8267537918060973,
+        "support": 922.0
+      }
+    }
+  },
+  "external_test": {
+    "n": 61,
+    "accuracy": 0.9836065573770492,
+    "accuracy_wilson_95": [
+      0.9128093437223194,
+      0.997100343885636
+    ],
+    "macro_f1": 0.24793388429752067,
+    "balanced_accuracy": 0.9836065573770492,
+    "log_loss": 0.01403368420624361,
+    "expected_calibration_error": 0.010563499335517592,
+    "threshold": 0.8,
+    "coverage": 0.9836065573770492,
+    "accepted_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        60
+      ]
+    ],
+    "per_class": {
+      "dry_decomposable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "dry_non_degradable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "dry_recyclable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "wet": {
+        "precision": 1.0,
+        "recall": 0.9836065573770492,
+        "f1-score": 0.9917355371900827,
+        "support": 61.0
+      },
+      "accuracy": 0.9836065573770492,
+      "macro avg": {
+        "precision": 0.25,
+        "recall": 0.2459016393442623,
+        "f1-score": 0.24793388429752067,
+        "support": 61.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 0.9836065573770492,
+        "f1-score": 0.9917355371900827,
+        "support": 61.0
+      }
+    }
+  },
+  "selection": [
+    {
+      "C": 0.001,
+      "validation_macro_f1": 0.9773269461323202
+    },
+    {
+      "C": 0.01,
+      "validation_macro_f1": 0.9867716084925393
+    },
+    {
+      "C": 0.1,
+      "validation_macro_f1": 0.9899243125787605
+    },
+    {
+      "C": 1,
+      "validation_macro_f1": 0.9929144806577044
+    }
+  ],
+  "temperature": 0.8913897426972445,
+  "training_seconds": 33.82969020004384,
+  "train_images": 2900,
+  "model_bytes": 9636110,
+  "majority_baseline_accuracy": 0.6019522776572668,
+  "limitations": [
+    "Legacy test set was previously used for validation; metrics are retrospective, not an untouched final benchmark.",
+    "Validation is reused for hyperparameter selection and temperature calibration.",
+    "Softmax confidence does not detect all out-of-distribution inputs."
+  ]
+}

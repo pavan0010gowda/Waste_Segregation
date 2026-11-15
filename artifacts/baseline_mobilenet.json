@@ -1,0 +1,84 @@
+{
+  "n": 922,
+  "accuracy": 0.8058568329718004,
+  "accuracy_wilson_95": [
+    0.7790774251534214,
+    0.8300980536757865
+  ],
+  "macro_f1": 0.7087117025106169,
+  "balanced_accuracy": 0.7774083437742378,
+  "log_loss": 0.7249778603142355,
+  "expected_calibration_error": 0.09623556246338595,
+  "threshold": 0.8,
+  "coverage": 0.7950108459869848,
+  "accepted_accuracy": 0.9495225102319236,
+  "confusion_matrix": [
+    [
+      144,
+      0,
+      7,
+      0
+    ],
+    [
+      0,
+      16,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      550,
+      0
+    ],
+    [
+      79,
+      0,
+      88,
+      33
+    ]
+  ],
+  "per_class": {
+    "dry_decomposable": {
+      "precision": 0.6457399103139013,
+      "recall": 0.9536423841059603,
+      "f1-score": 0.7700534759358288,
+      "support": 151.0
+    },
+    "dry_non_degradable": {
+      "precision": 0.7619047619047619,
+      "recall": 1.0,
+      "f1-score": 0.8648648648648649,
+      "support": 16.0
+    },
+    "dry_recyclable": {
+      "precision": 0.8527131782945736,
+      "recall": 0.990990990990991,
+      "f1-score": 0.9166666666666666,
+      "support": 555.0
+    },
+    "wet": {
+      "precision": 1.0,
+      "recall": 0.165,
+      "f1-score": 0.2832618025751073,
+      "support": 200.0
+    },
+    "accuracy": 0.8058568329718004,
+    "macro avg": {
+      "precision": 0.8150894626283092,
+      "recall": 0.7774083437742378,
+      "f1-score": 0.7087117025106169,
+      "support": 922.0
+    },
+    "weighted avg": {
+      "precision": 0.8491898227780517,
+      "recall": 0.8058568329718004,
+      "f1-score": 0.7543582139036545,
+      "support": 922.0
+    }
+  },
+  "model_sha256": "d9c58a55b324df04fe70b6d199391d647ffeb1c508cd184b0dc01ea0f5536a02",
+  "label_mapping_assumption": "Alphabetical directory order from original training script",
+  "limitation": "Retrospective benchmark: original training used data/test for validation; training provenance unavailable.",
+  "model_path": "C:\\Users\\pavan\\models\\waste_classifier_mobilenet.h5"
+}

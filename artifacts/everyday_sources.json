@@ -1,0 +1,108 @@
+{
+  "taco": {
+    "source": "https://zenodo.org/records/3587843",
+    "license": "CC BY 4.0",
+    "archive_url": "https://zenodo.org/api/records/3587843/files/TACO.zip/content",
+    "archive_size": 2719810615,
+    "integrity": "Selected ZIP members checked using CRC32 and byte length; per-image SHA-256 recorded. Full archive MD5 not checked because only selected byte ranges were downloaded.",
+    "authors": "Pedro F. Proenca and Pedro Simoes",
+    "citation": "TACO: Trash Annotations in Context for Litter Detection (2020)",
+    "mapping": {
+      "Clear plastic bottle": "dry_recyclable",
+      "Other plastic bottle": "dry_recyclable",
+      "Glass bottle": "dry_recyclable",
+      "Drink can": "dry_recyclable",
+      "Food Can": "dry_recyclable",
+      "Normal paper": "dry_recyclable",
+      "Magazine paper": "dry_recyclable",
+      "Corrugated carton": "dry_recyclable",
+      "Other carton": "dry_recyclable",
+      "Egg carton": "dry_recyclable",
+      "Paper bag": "dry_recyclable",
+      "Metal bottle cap": "dry_recyclable",
+      "Metal lid": "dry_recyclable",
+      "Other plastic wrapper": "dry_non_degradable",
+      "Crisp packet": "dry_non_degradable",
+      "Plastic film": "dry_non_degradable",
+      "Plastic straw": "dry_non_degradable",
+      "Plastic utensils": "dry_non_degradable",
+      "Styrofoam piece": "dry_non_degradable",
+      "Foam cup": "dry_non_degradable",
+      "Foam food container": "dry_non_degradable",
+      "Cigarette": "dry_non_degradable",
+      "Food waste": "wet"
+    },
+    "exclusions": "Unlabeled/ambiguous categories, batteries, aerosols, broken glass; tiny/crowded crops"
+  },
+  "realwaste": {
+    "source": "https://github.com/sam-single/realwaste",
+    "revision": "156e8e9154eeb163df30fcfd767f55b19633bb06",
+    "license": "CC BY-NC-SA 4.0 (authors repository)",
+    "mapping": {
+      "Vegetation": "dry_decomposable"
+    },
+    "authors": "Sam Single, Saeid Iranmanesh, Raad Raad"
+  },
+  "previous_manifest_sha256": "9b1b8967a0361cae6a6c2578b6e7e474a24d29355781e05ca3b6607034ce7570",
+  "retained": 976,
+  "splits": {
+    "train": {
+      "dry_decomposable": 126,
+      "dry_recyclable": 291,
+      "dry_non_degradable": 264,
+      "wet": 3
+    },
+    "validation": {
+      "dry_decomposable": 27,
+      "dry_recyclable": 60,
+      "dry_non_degradable": 59
+    },
+    "everyday_holdout": {
+      "dry_decomposable": 27,
+      "dry_recyclable": 60,
+      "dry_non_degradable": 59
+    }
+  },
+  "categories": {
+    "Vegetation": 180,
+    "Glass bottle": 52,
+    "Other plastic bottle": 29,
+    "Clear plastic bottle": 80,
+    "Normal paper": 30,
+    "Drink can": 80,
+    "Food Can": 10,
+    "Cigarette": 67,
+    "Plastic film": 80,
+    "Metal lid": 2,
+    "Egg carton": 6,
+    "Plastic straw": 47,
+    "Other carton": 43,
+    "Paper bag": 14,
+    "Crisp packet": 25,
+    "Plastic utensils": 17,
+    "Metal bottle cap": 32,
+    "Foam cup": 6,
+    "Other plastic wrapper": 79,
+    "Food waste": 3,
+    "Styrofoam piece": 50,
+    "Corrugated carton": 29,
+    "Magazine paper": 4,
+    "Foam food container": 11
+  },
+  "excluded": [
+    {
+      "path": "data/external/everyday/taco_crops/01135_03471.jpg",
+      "reason": "new_near_duplicate"
+    },
+    {
+      "path": "data/external/everyday/taco_crops/01305_04049.jpg",
+      "reason": "new_near_duplicate"
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Material proxies do not determine actual moisture or local recycling eligibility.",
+    "Perceptual hashing does not guarantee all related views are found; no live-camera accuracy claim.",
+    "Existing test/validation assignments and images are preserved. New source groups are disjoint."
+  ]
+}

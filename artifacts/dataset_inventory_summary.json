@@ -1,0 +1,27 @@
+{
+  "total_images": 10064,
+  "total_bytes": 2651120863,
+  "decoded_images": 10063,
+  "counts": {
+    "archive_metadata": 1,
+    "crop_source": 798,
+    "duplicate": 316,
+    "everyday_holdout": 146,
+    "excluded": 564,
+    "external_benchmark": 2172,
+    "external_test": 61,
+    "organic_holdout": 90,
+    "quarantine": 2,
+    "test": 922,
+    "train": 3892,
+    "unmapped_external": 137,
+    "validation": 963
+  },
+  "manifest": "artifacts/all-data-manifest.json",
+  "manifest_sha256": "1a26b309c84ee9de17065632f63b5d4dba1e45e0ee6b6dd58f81a796d8c5f575",
+  "missing_manifest_images": [],
+  "new_manifest_images": [],
+  "exclusions_of_unlisted_images": [],
+  "issues": 0,
+  "policy": "Every file is accounted for. Only train rows fit the model; validation selects it; holdouts remain separate. Source photos and rejected duplicates are not extra training examples."
+}

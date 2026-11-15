@@ -1,14 +1,19 @@
-# Python virtual environment
+# Local environments and generated Python files
 venv/
 .venv/
 
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Dataset
-data/train/
-data/test/
+# Earlier versions stay local, outside the published project.
+/legacy/
+
+# Keep only the dataset skeleton and its top-level guide in Git.
+/data/**
+!/data/**/
+!/data/**/.gitkeep
+!/data/README.md
 
 # Model files
 *.h5
@@ -17,3 +22,20 @@ data/test/
 
 # System files
 .DS_Store
+artifacts/cache/
+artifacts/runs/
+*.keras
+*.npz
+*.npy
+*.joblib
+.pytest_cache/
+.env
+.env.*
+!.env.example
+Thumbs.db
+*.part
+artifacts/local/
+artifacts/smoke/
+artifacts/realwaste-tree.json
+artifacts/wet-audit.jpg
+artifacts/label-audit.jpg

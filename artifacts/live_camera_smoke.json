@@ -1,0 +1,10 @@
+{
+  "camera_opened": true,
+  "frames_read": 90,
+  "status_counts": {
+    "calibrating": 32,
+    "no_object": 58
+  },
+  "frames_saved": 0,
+  "scope": "Actual webcam acquisition and foreground processing only. Scene was not manually labeled or controlled; not an accuracy benchmark."
+}

@@ -1,0 +1,14 @@
+{
+  "protected_files_verified": 72,
+  "changed_protected_files": [],
+  "arduino_sha256": "9e0f8a46a2577fd4e4972fd67188817abc5b96720a07530b766eab578ecb134b",
+  "live_model_sha256": "7c8ca0e925247be1bb54a60d5d24ac04075a7d2a5bd271913329cdbb86333867",
+  "scope": "SHA-256 comparison with snapshot taken before cleanup; original model files, all existing experiment bundles, deployment records and camera/simulator/foreground code unchanged.",
+  "tests_passed": 113,
+  "dataset_files_ignored": 10064,
+  "tracked_dataset_images": 0,
+  "publishable_files": 100,
+  "publishable_bytes": 15154682,
+  "oversize_files": [],
+  "git_commit_or_push_performed": false
+}

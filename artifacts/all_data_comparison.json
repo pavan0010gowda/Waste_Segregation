@@ -1,0 +1,102 @@
+{
+  "candidate": "artifacts/runs/selective_all_data",
+  "deployed": "artifacts/runs/selective_everyday",
+  "train_images": 3892,
+  "manifest_sha256": "1a26b309c84ee9de17065632f63b5d4dba1e45e0ee6b6dd58f81a796d8c5f575",
+  "model_sha256": {
+    "head.npz": "e69a3794d74186b607f71502f8cc1cbba203a1785778f2c8c9c0617295aaddfc",
+    "features.keras": "877b66f6a4acbc346da067257c7b5342f1375f79996c6ddbe76055204c9d8546"
+  },
+  "training_seconds": 103.25440700000036,
+  "selection": [
+    {
+      "name": "balanced_logistic_C=0.01",
+      "validation_macro_f1": 0.9582491555371662
+    },
+    {
+      "name": "balanced_logistic_C=0.1",
+      "validation_macro_f1": 0.9608111881648915
+    },
+    {
+      "name": "balanced_logistic_C=1",
+      "validation_macro_f1": 0.9554747679850844
+    },
+    {
+      "name": "balanced_rbf_ovr_C=1",
+      "validation_macro_f1": 0.964093844762435
+    },
+    {
+      "name": "balanced_rbf_ovr_C=10",
+      "validation_macro_f1": 0.9699378716024234
+    },
+    {
+      "name": "balanced_rbf_ovr_C=100",
+      "validation_macro_f1": 0.9699378716024234
+    },
+    {
+      "name": "cosine_neighbors_k=3",
+      "validation_macro_f1": 0.9484058129910795
+    },
+    {
+      "name": "cosine_neighbors_k=7",
+      "validation_macro_f1": 0.9573495933240298
+    },
+    {
+      "name": "cosine_neighbors_k=15",
+      "validation_macro_f1": 0.9543411453985922
+    }
+  ],
+  "decision": {
+    "new_validation_macro_f1": 0.9699378716024234,
+    "manifest_sha256": "1a26b309c84ee9de17065632f63b5d4dba1e45e0ee6b6dd58f81a796d8c5f575",
+    "selection_rule": "Compare raw macro F1 on exactly the same expanded validation; no test or holdout scores used.",
+    "baseline_validation_macro_f1": 0.9699378716024234,
+    "baseline_run": "artifacts\\runs\\selective_everyday",
+    "baseline_head_sha256": "e05fa5f0af63b3d107ab3c3f298eb167b9fbc748a8c118a38d9ef59e09227e81",
+    "recommendation": "retain_baseline"
+  },
+  "source_integrity": {
+    "images_verified": 6074,
+    "all_manifest_hashes_match": true,
+    "duplicate_groups_disjoint": true,
+    "manifest_sha256": "1a26b309c84ee9de17065632f63b5d4dba1e45e0ee6b6dd58f81a796d8c5f575"
+  },
+  "evaluation": {
+    "validation": {
+      "n": 963,
+      "accuracy": 0.9781931464174455,
+      "macro_f1": 0.9699378716024234,
+      "selective_coverage": 0.9169262720664589,
+      "selective_accepted_accuracy": 0.9909399773499433
+    },
+    "test": {
+      "n": 922,
+      "accuracy": 0.9273318872017353,
+      "macro_f1": 0.8859383984228336,
+      "selective_coverage": 0.7190889370932755,
+      "selective_accepted_accuracy": 0.9924585218702866
+    },
+    "external_test": {
+      "n": 61,
+      "accuracy": 1.0,
+      "macro_f1": 0.25,
+      "selective_coverage": 0.8032786885245902,
+      "selective_accepted_accuracy": 1.0
+    },
+    "organic_holdout": {
+      "n": 90,
+      "accuracy": 1.0,
+      "macro_f1": 0.25,
+      "selective_coverage": 0.6888888888888889,
+      "selective_accepted_accuracy": 1.0
+    },
+    "everyday_holdout": {
+      "n": 146,
+      "accuracy": 0.8424657534246576,
+      "macro_f1": 0.6471644752676977,
+      "selective_coverage": 0.7397260273972602,
+      "selective_accepted_accuracy": 0.9537037037037037
+    }
+  },
+  "note": "Two previously omitted AVIF images were added; the 963-image validation score tied the deployed model, so the deployment pointer and previous-model choice remain unchanged."
+}

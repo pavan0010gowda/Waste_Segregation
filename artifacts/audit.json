@@ -1,0 +1,368 @@
+{
+  "seed": 42,
+  "images": 4507,
+  "invalid": [],
+  "counts": {
+    "train": {
+      "dry_decomposable": 516,
+      "dry_non_degradable": 187,
+      "dry_recyclable": 1213,
+      "wet": 698
+    },
+    "validation": {
+      "dry_decomposable": 129,
+      "dry_non_degradable": 47,
+      "dry_recyclable": 303,
+      "wet": 174
+    },
+    "test": {
+      "dry_decomposable": 151,
+      "dry_non_degradable": 16,
+      "dry_recyclable": 555,
+      "wet": 200
+    },
+    "duplicate": {
+      "dry_decomposable": 64,
+      "dry_non_degradable": 12,
+      "dry_recyclable": 112,
+      "wet": 128
+    },
+    "quarantine": {
+      "dry_decomposable": 1,
+      "dry_non_degradable": 1
+    }
+  },
+  "near_duplicate_extras": 317,
+  "cross_split_groups": [
+    [
+      "data/train/dry_decomposable/c14_png.rf.0ff10aaacb7e655fd7ce06530d98f7f1.jpg",
+      "data/test/dry_decomposable/images-30-1-_png.rf.5f1218a20cad53bb4887ce776f09eac2.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/coconut5_png.rf.3ced0063970773a87ae7832d0c765a34.jpg",
+      "data/test/dry_decomposable/coconut5_jpg.rf.03b7e605659f22e5d19321a60cddd2ec.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/coconut_png.rf.336713e59c4be40dde7cbb9651c58366.jpg",
+      "data/test/dry_decomposable/t5_png.rf.12be09a8b22c61cde6a38e94d5fedce7.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (1).jpg",
+      "data/test/dry_decomposable/download (1).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (10).jpg",
+      "data/test/dry_decomposable/download (10).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (11).jpg",
+      "data/test/dry_decomposable/download (11).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (12).jpg",
+      "data/test/dry_decomposable/download (12).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (13).jpg",
+      "data/test/dry_decomposable/download (13).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (14).jpg",
+      "data/test/dry_decomposable/download (14).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (15).jpg",
+      "data/test/dry_decomposable/download (15).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (19).jpg",
+      "data/test/dry_decomposable/download (19).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (2).jpg",
+      "data/test/dry_decomposable/download (2).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (3).jpg",
+      "data/test/dry_decomposable/download (3).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (4).jpg",
+      "data/test/dry_decomposable/download (4).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (5).jpg",
+      "data/test/dry_decomposable/download (5).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (6).jpg",
+      "data/test/dry_decomposable/download (6).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (7).jpg",
+      "data/test/dry_decomposable/download (7).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (8).jpg",
+      "data/test/dry_decomposable/download (8).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download (9).jpg",
+      "data/test/dry_decomposable/download (9).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download-4-_png.rf.b1f36e1524dc99a9e0e0c10b4a6b00cd.jpg",
+      "data/test/dry_decomposable/c7_png.rf.8275bb72b8dcc94fdd271cedbf8de5fc.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download-5-_png.rf.f767604337693d6a10d0e5631b7da991.jpg",
+      "data/test/dry_decomposable/c_png.rf.1859eae38b4e8fe90a16068637c36c04.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/download.jpg",
+      "data/test/dry_decomposable/download.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (1).jpg",
+      "data/test/dry_decomposable/images (1).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (10).jpg",
+      "data/test/dry_decomposable/images (10).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (11).jpg",
+      "data/test/dry_decomposable/images (11).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (12).jpg",
+      "data/test/dry_decomposable/images (12).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (13).jpg",
+      "data/test/dry_decomposable/images (13).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (14).jpg",
+      "data/test/dry_decomposable/images (14).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (15).jpg",
+      "data/test/dry_decomposable/images (15).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (2).jpg",
+      "data/test/dry_decomposable/images (2).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (3).jpg",
+      "data/test/dry_decomposable/images (3).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (4).jpg",
+      "data/test/dry_decomposable/images (4).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (5).jpg",
+      "data/test/dry_decomposable/images (5).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (6).jpg",
+      "data/test/dry_decomposable/images (6).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (7).jpg",
+      "data/test/dry_decomposable/images (7).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (8).jpg",
+      "data/test/dry_decomposable/images (8).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images (9).jpg",
+      "data/test/dry_decomposable/images (9).jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images-4-_png.rf.6beda20067d100e8b7c3ba5bb49733ac.jpg",
+      "data/test/dry_decomposable/coconut2_png.rf.78cf5e7e782485f26024a9a5850b9cc3.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/images.jpg",
+      "data/test/dry_decomposable/images.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/IMG20240914141250_png.rf.38e10520758d5bcc50707e1586df83d4.jpg",
+      "data/test/dry_decomposable/IMG20240914141250_png_jpg.rf.e436c3a30220817802774fe47b0b7e16.jpg"
+    ],
+    [
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.26 PM.jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.26 PM.jpeg"
+    ],
+    [
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.27 PM (1).jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.27 PM (1).jpeg"
+    ],
+    [
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.27 PM.jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.27 PM.jpeg"
+    ],
+    [
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.29 PM (1).jpeg",
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.29 PM.jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.29 PM (1).jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.29 PM.jpeg"
+    ],
+    [
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.31 PM.jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.31 PM.jpeg"
+    ],
+    [
+      "data/train/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.34 PM.jpeg",
+      "data/test/dry_decomposable/WhatsApp Image 2025-12-10 at 3.03.34 PM.jpeg"
+    ],
+    [
+      "data/train/dry_recyclable/cardboard-124_jpg.rf.a202fa521173815c961bb50eded371ed.jpg",
+      "data/test/dry_recyclable/cardboard-123_jpg.rf.b3d896906e683aa8b1f4f82f86492b08.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/cardboard-1405_jpg.rf.eb12a15c4feadfaef8844c920c57c317.jpg",
+      "data/test/dry_recyclable/cardboard566_jpg.rf.ff8de036f2ea51b2af146021a0ad27d8.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/cardboard-1899_jpg.rf.d211065618fa311e035d66271f237d3f.jpg",
+      "data/test/dry_recyclable/cardboard-118_jpg.rf.c9261fa88196aac66203bcb3a6059244.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/cardboard-1900_jpg.rf.16e246174a8b19fffd1fa2ce56dfdbcd.jpg",
+      "data/test/dry_recyclable/cardboard-119_jpg.rf.1120d5fbd134bb05b3c3e1eb51f8ce84.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/cardboard222_jpg.rf.618ac7b09cf9dd9ff60687c6eaa46513.jpg",
+      "data/test/dry_recyclable/cardboard406_jpg.rf.1749d5706c6c7be8723e885ad77b1f66.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240607_104541_jpg.rf.2d370db502b6ab5efe67be290f88a355.jpg",
+      "data/test/dry_recyclable/IMG_20240607_104539_jpg.rf.a2033796f406af46738954bd2fb60266.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240607_105652_jpg.rf.7b05c2239dd62ed3772a0f2c18dc7cb8.jpg",
+      "data/test/dry_recyclable/IMG_20240607_105651_jpg.rf.21884e6f901d12c46650480d861275dc.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240607_105821_jpg.rf.a5338776859c64ecdc7a0ca396cb9c5b.jpg",
+      "data/train/dry_recyclable/IMG_20240607_105825_jpg.rf.a26914661347d8ad844e618095cc7301.jpg",
+      "data/test/dry_recyclable/IMG_20240607_105826_jpg.rf.e46631e851af08efc84ce3ba432b19c3.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123518_jpg.rf.0fd8f0b8c7be008791a40e94eca4e0d0.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123528_jpg.rf.bb50321e52a2146fad8c69515296ccc7.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123520_jpg.rf.2d5442f97a8bd7d4fe2257363e556267.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123526_jpg.rf.7cc4947ef9d80a6dcf0d4306013026ac.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123532_jpg.rf.14bc26feaff0563c446ff1f049447e3b.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123609_jpg.rf.8e546fbbb3bdf588cf353f37c9e3b421.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123600_jpg.rf.f4beb3c9eb318b14798d98c4f4014109.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123727_jpg.rf.1b3d1a6f9ecbc8751dd5ed88cf65ee3a.jpg",
+      "data/train/dry_recyclable/IMG_20240702_123734_jpg.rf.9a011e6eda97a3c9935665be2e6b07e9.jpg",
+      "data/train/dry_recyclable/IMG_20240702_123738_jpg.rf.5346e2a542a505999acd2f6e56b46db0.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123718_jpg.rf.25e1fd237c1e5097e81d903693f5fd18.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123728_jpg.rf.9601a6672d2f563a431d9bcb424bc299.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123731_jpg.rf.c8dc6e1b9398caaf5ae8941cfdbe5b14.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123733_jpg.rf.031f2c2d8bae5dcb66c3d90c6a2da31f.jpg",
+      "data/train/dry_recyclable/IMG_20240702_123736_jpg.rf.a4b184914299d30ebf1af910d1edd472.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123717_jpg.rf.f70c2f6d57078455f64e45643d715b76.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123726_jpg.rf.987794cafad005ab24465384c21e3b9a.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123748_jpg.rf.9f13f5fe631659b395e4845ba6e82c48.jpg",
+      "data/train/dry_recyclable/IMG_20240702_123753_jpg.rf.dd71023a71548fe02e9e39752088b308.jpg",
+      "data/train/dry_recyclable/IMG_20240702_123757_jpg.rf.7b70e22a21e2184ff6c17921bbfbce73.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123751_jpg.rf.9454890df5b0fcab3b6650d5fbf9164e.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123754_jpg.rf.10f145052321b02370416a0212f7dbeb.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123747_jpg.rf.d0cc03768aee83fdfe0e4918ab345040.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123827_jpg.rf.e38c7395c0c9bf56ecd3fa92ac091a45.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123839_jpg.rf.b6558299b9f288c07897d2c36c42e537.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123853_jpg.rf.df14f0cbc3a36b3f7eda326dcbf0bd4e.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123854_jpg.rf.b5016b3067958dcb1044d79351a6452d.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_123931_jpg.rf.f4573b398d5a46a8a5e0bddbe5759959.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123920_jpg.rf.4774eef867d43aa6271bf279b739cb11.jpg",
+      "data/test/dry_recyclable/IMG_20240702_123923_jpg.rf.f3890147a8d667b958821096280779fb.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_124006_jpg.rf.6c7f6bff1f2fc79c4218adc2ad44edfa.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124009_jpg.rf.68c1a51ed931462ed254ed67d1927fd0.jpg",
+      "data/test/dry_recyclable/IMG_20240702_124004_jpg.rf.5cd4fa844dec3a36dee8b2ee0612e236.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_124058_1_jpg.rf.29fe9b681d546a0c33689154f46d2710.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124100_jpg.rf.d8c9ddfc14546163414ba6c357ae87d8.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124101_jpg.rf.d0a0f4629922f58683b6614ec42c3aa9.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124102_jpg.rf.f9cdfc4cf9dc092fe70a2dfb87b40d41.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124104_jpg.rf.a1e0921151a358a1f08ebaa14e721fcd.jpg",
+      "data/test/dry_recyclable/IMG_20240702_124058_jpg.rf.d629829d6e1c26584deab5df12181d6f.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_124127_jpg.rf.bd2813bc75c2ff7d3f52445716f3ddc6.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124130_jpg.rf.15b18ee2d2be7c53d2b071c319ebdb77.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124131_jpg.rf.1b6ac19def4e1f8ac07224c70007dafd.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124134_jpg.rf.2a579b63c5bf5c9317f2e2132315a44c.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124135_jpg.rf.cb5d54ab1071c7b63141a3d0cb0c3967.jpg",
+      "data/test/dry_recyclable/IMG_20240702_124136_jpg.rf.2015e28308cf752252379fface24bd6e.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/IMG_20240702_124133_jpg.rf.5ca98c11141f43123a7245dfcd82ce3b.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124137_jpg.rf.2346c73e9a1bb05466afccc31d409df7.jpg",
+      "data/train/dry_recyclable/IMG_20240702_124140_jpg.rf.8105253af1a2491c96ca79485d61b817.jpg",
+      "data/test/dry_recyclable/IMG_20240702_124139_jpg.rf.81965893596643737ade89710151f0c2.jpg",
+      "data/test/dry_recyclable/IMG_20240702_124141_jpg.rf.508ef16c6ac86b59a695bba38f3b8c3f.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/metal213_jpg.rf.c92055173b368c88f9c1750f6b392c6c.jpg",
+      "data/test/dry_recyclable/metal_360_jpg.rf.66bceca9e2fa7da447842d2a042352a3.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/metal413_png.rf.c9c28dc2dd7c609878aee8686e7039e1.jpg",
+      "data/test/dry_recyclable/alum-53-_jpg.rf.25b6585f7809ee01390292f4668b72b6.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/metal_1232_jpg.rf.9c8d3f8050e09dfb21efb97053c757a4.jpg",
+      "data/test/dry_recyclable/metal203_jpg.rf.e4e6ca66e2568cfeb92f246d914fa81c.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/metal_1492_jpg.rf.687906976560ae002abb8f7a90392b9c.jpg",
+      "data/test/dry_recyclable/metal_1441_jpg.rf.4135d6f23b1cd643443b0bc03007974c.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/metal_2468_jpg.rf.100757e7b9d3e6d90b85fe374e38cf19.jpg",
+      "data/test/dry_recyclable/metal18_jpg.rf.3d838a71f8401e95f6f17ed2e388ad09.jpg"
+    ],
+    [
+      "data/train/dry_recyclable/WhatsApp Image 2025-12-11 at 10.41.58 PM (2).jpeg",
+      "data/test/dry_recyclable/WhatsApp Image 2025-12-11 at 10.41.59 PM.jpeg"
+    ]
+  ],
+  "conflicting_groups": [
+    [
+      "data/train/dry_decomposable/ther.jpg",
+      "data/train/dry_non_degradable/packaging-thermocol-500x500.webp"
+    ]
+  ],
+  "caveat": "pHash is a heuristic; manually inspect conflicts. Original test was used by legacy training, so this is not a pristine holdout."
+}

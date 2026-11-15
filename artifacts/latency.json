@@ -1,0 +1,11 @@
+{
+  "model_sha256": "e547b02c0052b74609aace43290a32bd9bc6ea9fc74238698abe2ece48604e7d",
+  "samples": 30,
+  "median_ms": 52.90100001730025,
+  "p95_ms": 139.6567749849055,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "device": "CPU (native Windows TensorFlow)",
+  "scope": "Warmed inference including resize, excluding file decode, startup and HTTP transport; other local workloads may affect timings.",
+  "real_api_smoke": "passed",
+  "prediction_parity": "passed"
+}

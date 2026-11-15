@@ -1,0 +1,40 @@
+{
+  "trashnet": {
+    "source": "https://raw.githubusercontent.com/garythung/trashnet/master/data/dataset-resized.zip",
+    "project": "https://github.com/garythung/trashnet",
+    "authors": "Gary Thung and Mindy Yang",
+    "archive_sha256": "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2",
+    "license": "MIT (upstream repository LICENSE)",
+    "mapping": {
+      "paper": "dry_recyclable",
+      "cardboard": "dry_recyclable",
+      "glass": "dry_recyclable",
+      "metal": "dry_recyclable",
+      "plastic": "dry_recyclable"
+    },
+    "excluded": "trash: ambiguous legacy category",
+    "purpose": "External material-transfer evaluation; not automatically merged into training."
+  },
+  "realwaste-food": {
+    "source": "https://github.com/sam-single/realwaste",
+    "commit": "156e8e9154eeb163df30fcfd767f55b19633bb06",
+    "authors": "Sam Single, Saeid Iranmanesh, Raad Raad",
+    "license": "CC BY-NC-SA 4.0 (authors repository)",
+    "citation": "RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning (2023)",
+    "mapping": {
+      "Food Organics": "wet"
+    },
+    "downloaded": 411,
+    "retained": 409,
+    "excluded": [
+      "data/external/realwaste-food/Food Organics_73.jpg",
+      "data/external/realwaste-food/Food Organics_82.jpg"
+    ],
+    "scope": "Organic material proxy; image classification does not measure moisture.",
+    "splits": {
+      "train": 286,
+      "validation": 62,
+      "external_test": 61
+    }
+  }
+}
